@@ -6,6 +6,11 @@ def hello_t(array)
   i = i + 1 
   end 
 end
+hello_t(["Tim", "Tom", "Jim"]) do |name|
+  if name.start_with?("T")
+    puts "Hi, #{name}"
+  end
+end
 
 # set a ccounter variable, i = 0 
 #start our while loop and tell it to execute code b/w while and end as long as i i sless than the length of the array 
